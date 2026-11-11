@@ -10,7 +10,7 @@ done
 select selectedGame in "${gamesList[@]}"; do
     if [[ -n "$selectedGame" ]]; then
         echo "Loading $selectedGame"
-        ./games/$selectedGame
+        bash ./games/$selectedGame
 else
     echo "try again, you mistyped"
 fi
