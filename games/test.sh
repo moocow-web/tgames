@@ -1,6 +1,6 @@
 echo "Basic test game. WASD"
 while true; do
-    read rsn1 key
+    read -n 1 -s key
     case "$key" in
         w|W) echo "W";;
         a|A) echo "A";;
